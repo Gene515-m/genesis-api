@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #fff;
+  background: linear-gradient(318deg, #044766, #005180, #000066);
+  /* Impostazione dimensioni background */
+  background-size: 1000% 1000%;
+
+  -webkit-animation: Coolgradient 41s linear infinite;
+  -moz-animation: Coolgradient 41s linear infinite;
+  -o-animation: Coolgradient 41s linear infinite;
+  animation: Coolgradient 41s linear infinite;
+}
+/* Animazione sfumatura */
+@-webkit-keyframes Coolgradient {
+  0% {
+    background-position: 5% 0%; /* Posizione iniziale */
+  }
+  50% {
+    background-position: 96% 100%; /* Posizione a metà animazione */
+  }
+  100% {
+    background-position: 5% 0%; /* Posizione finale, poi tornare posizione iniziale */
+  }
+}
+@-moz-keyframes Coolgradient {
+  0% {
+    background-position: 5% 0%;
+  }
+  50% {
+    background-position: 96% 100%;
+  }
+  100% {
+    background-position: 5% 0%;
+  }
+}
+@-o-keyframes Coolgradient {
+  0% {
+    background-position: 5% 0%;
+  }
+  50% {
+    background-position: 96% 100%;
+  }
+  100% {
+    background-position: 5% 0%;
+  }
+}
+@keyframes Coolgradient {
+  0% {
+    background-position: 5% 0%;
+  }
+  50% {
+    background-position: 96% 100%;
+  }
+  100% {
+    background-position: 5% 0%;
+  }
+}
+
+p {
+  font-size: clamp(0.85rem, 1.5vw, 1.2rem);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+p:hover {
+  overflow: visible;
+  white-space: normal;
+  transition: all 1.5s ease;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.card img {
+  max-width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  padding: 1.5rem;
+  object-fit: cover;
+}
+
+footer ul {
+  color: #fff !important;
+}
