@@ -230,6 +230,6 @@ const toastPops = (buttons) => {
     });
   });
 };
-
+// Select all control buttons and attach event listener for showing Bootstrap toasts
 const buttons = document.querySelectorAll(".controlButton");
 toastPops(buttons);
