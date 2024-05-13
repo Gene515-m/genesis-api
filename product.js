@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const cardHtml = `
       <div class="col col-sm mt-3">
         <div class="card bg-transparent text-white shadow">
-          <img src="${post.imageUrl}" class="img-fluid" alt="Product" />
+          <img src="${post.imageUrl}" class="img-fluid" alt="${post.name}" />
           <div class="card-body bg-transparent text-white">
             <p class="card-text fw-bold">${post.brand} ${post.name}</p>
             <p class="card-text">${post.description}</p>

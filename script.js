@@ -51,7 +51,7 @@ const getClickHandler = async () => {
           <td><a href="${product.imageUrl}" target="_blank">Link</a></td>
           <td>${product.price}</td>
           <td>
-            <button class="btn btn-outline-primary edit-btn" data-id="${product._id}"><i class="bi bi-pencil-square"></i></button>
+            <button class="btn btn-outline-primary edit-btn" data-id="${product._id}" onClick="editPrdct('${product._id}')"><i class="bi bi-pencil-square"></i></button>
           </td>
         </tr>`;
       prdctListWrapper.insertAdjacentHTML("afterbegin", prdctItem);
@@ -100,7 +100,7 @@ const addPrdct = async () => {
 const editPrdct = async (productId) => {
   try {
     // Clear input fields
-    // clearInputFields();
+    clearInputFields();
 
     const response = await fetch(url + productId, {
       headers: {
