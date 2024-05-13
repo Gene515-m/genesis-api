@@ -86,3 +86,17 @@ body {
 footer ul {
   color: #fff !important;
 }
+/**************************/
+/* Detail page*/
+#resultDtl div img {
+  max-width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.update {
+  width: 82px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
           </ul>
           <div class="d-grid card-body rounded-bottom-1">
             <button id="toastBtn" class="addToCart btn bg-gradient mb-1 text-white">Add to cart</button>
+            <button id="toastBtn" class="btn bg-gradient mb-1 text-white"><a class="text-white" href="./details.html?id=${post._id}&title=${post.name}">See Details</a></button>
           </div>
         </div>
       </div>
