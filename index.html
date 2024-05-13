@@ -453,18 +453,17 @@
             <input type="hidden" class="form-control" id="dta">
           </form>
           <!-- End Inputs Dashboard -->
-          
           <!-- Control Buttons -->
           <div class="container mb-5">
             <!-- Dashboard Add Button -->
             <button id="addPrdct" class="controlButton btn btn-primary btn-md me-2" onclick="addPrdct()"><i class="bi bi-file-earmark-plus me-1"></i>Add</button>
             <div class="toast-container position-fixed bottom-0 end-0 p-3">
               <div class="toast fade hide" id="addPopup">
-                <div class="toast-header text-bg-success">
+                <div class="toast-header text-bg-primary ">
                   <div class="me-auto">ADD notification</div>
                   <small>now</small>
                 </div>
-                <div class="toast-body text-bg-success ">
+                <div class="toast-body text-bg-primary  ">
                   <i class="bi bi-check2-square"></i>
                   ADD button has been clicked
                 </div>
@@ -507,9 +506,11 @@
           <button class="btn btn-warning mt-3" disabled>POST REQUEST</i></button>
           <!-- POST Request Button-->
           <button class="btn btn-info mt-3" disabled>PUT REQUEST</i></button>
-          <!-- POST Request Button-->
+          <!-- PATCH Request Button-->
           <button class="btn btn-primary bg-opacity-75 mt-3" disabled>PATCH REQUEST</i></button>
-          <!--  -->
+          <!-- PATCH Request Button-->
+          <button class="btn btn-danger mt-3" disabled>DELETE REQUEST</i></button>
+          <!-- Table List -->
           <div class="table-responsive mt-3">
             <table class="table table-hover">
               <thead>

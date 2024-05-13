@@ -1,9 +1,9 @@
 "use strict";
-
+//Define API URL & Token
 const url = "https://striveschool-api.herokuapp.com/api/product/";
 const token =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjM5ZTI2ZGQ2MzdmMzAwMTVhZGJmNTgiLCJpYXQiOjE3MTUwNzQwOTksImV4cCI6MTcxNjI4MzY5OX0.URjCzTAFoNKcukg_BOJT_yqvmcwTHooEvqu3kFx4xqg";
-
+//Get DOM elements
 const getApi = document.getElementById("getApi");
 const prdctListWrapper = document.getElementById("prdctListWrapper");
 const addPrdctBtn = document.getElementById("addPrdct");
@@ -15,7 +15,7 @@ const inputBrand = document.getElementById("inputBrand");
 const inputUrl = document.getElementById("inputUrl");
 const inputPrice = document.getElementById("inputPrice");
 const dtaInput = document.getElementById("dta");
-
+//Clear Input fields
 const clearInputFields = () => {
   inputName.value = "";
   inputDescription.value = "";
@@ -88,7 +88,7 @@ const addPrdct = async () => {
       throw new Error("Failed to add product");
     }
 
-    // Showing success message
+    // Alert showing success message
     alert("Product added successfully");
     clearInputFields();
   } catch (error) {
@@ -96,7 +96,7 @@ const addPrdct = async () => {
     alert("Failed to add product");
   }
 };
-//Product ID
+//Editing product
 const editPrdct = async (productId) => {
   try {
     // Clear input fields
@@ -183,7 +183,7 @@ const deletePrdct = async () => {
 
     // Check if the request was successful
     if (response.ok) {
-      // Display a success message /Bootstrap toast Popup
+      // Display a success message
       alert("Product deleted successfully");
 
       // Clear input fields

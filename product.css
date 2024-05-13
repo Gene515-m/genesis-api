@@ -61,19 +61,18 @@ body {
   }
 }
 
-p {
+.card p {
   font-size: clamp(0.85rem, 1.5vw, 1.2rem);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-p:hover {
+.card p:hover {
   overflow: visible;
   white-space: normal;
   transition: all 1.5s ease;
   cursor: pointer;
-  font-weight: 700;
 }
 
 .card img {
