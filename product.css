@@ -18,13 +18,13 @@ body {
 /* Animazione sfumatura */
 @-webkit-keyframes Coolgradient {
   0% {
-    background-position: 5% 0%; /* Posizione iniziale */
+    background-position: 5% 0%;
   }
   50% {
-    background-position: 96% 100%; /* Posizione a metà animazione */
+    background-position: 96% 100%;
   }
   100% {
-    background-position: 5% 0%; /* Posizione finale, poi tornare posizione iniziale */
+    background-position: 5% 0%;
   }
 }
 @-moz-keyframes Coolgradient {
@@ -83,20 +83,10 @@ body {
   object-fit: cover;
 }
 
-footer ul {
-  color: #fff !important;
-}
 /**************************/
 /* Detail page*/
 #resultDtl div img {
   max-width: 100%;
   aspect-ratio: 1/1;
   object-fit: cover;
-}
-
-.update {
-  width: 82px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }

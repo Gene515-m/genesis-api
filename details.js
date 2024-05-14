@@ -52,8 +52,8 @@ const displayDetail = (detail) => {
         <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
       </a>
     </div>
-    <div class="col-auto d-none d-lg-block">
-      <img src="${detail.imageUrl}" class="img-fluid" alt="${detail.imageUrl}" />
+    <div class="col-2">
+      <img src="${detail.imageUrl}" class="img-fluid" alt="${detail.name}" />
     </div>
   </div>
   `;
